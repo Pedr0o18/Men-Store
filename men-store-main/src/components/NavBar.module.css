@@ -1,0 +1,28 @@
+.navBarDisplay {
+    padding: 1.5em 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navBarDisplay h1 {
+    font-weight: 900;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    padding: 0em 1em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.navDisplay a:hover {
+    text-decoration: underline;
+}
