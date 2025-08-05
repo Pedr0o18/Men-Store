@@ -1,0 +1,55 @@
+.registerMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.registerMain h1 {
+    font-weight: 700;
+    margin: 1em;
+}
+
+.registerMain section {
+    border: 1px solid black;
+    border-radius: 17.5px;
+    padding: 2em;
+    width: 500px;
+    height: 450px;
+}
+
+.registerMain form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.registerMain input, .registerButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    width: 400px;
+    padding: 0.5em 1em;
+    margin: .5em;
+    border-radius: 5px;
+}
+
+.registerButton {
+    background-color: #0D1A26;
+    color: white;
+    cursor: pointer;
+    width: 300px;
+}
+
+.registerMain input {
+    border: 1px solid #B0B0B0;
+    background-color: #D9D9D9;
+}
+
+.error {
+    background-color: rgba(255, 0, 0, 0.579);
+    padding: .5em 1em;
+    border-radius: 10px;
+}
