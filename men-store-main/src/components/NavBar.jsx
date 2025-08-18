@@ -1,8 +1,15 @@
 import styles from './NavBar.module.css'
 
+import { useAuthenticated } from '../hooks/useAuthenticated'
+
+import { useAuthValue } from '../context/AuthContext'
+
 import {Link} from 'react-router-dom'
 
 const NavBar = () => {
+
+  const {user} = useAuthValue()
+
   return (
       <nav className={styles.navBarDisplay}>
         <Link to='/' ><h1>MEN STORE</h1></Link>
@@ -25,11 +32,14 @@ const NavBar = () => {
             <Link to=""><img src="/search-icon.png" alt="" /></Link >
           </li>
           <li>
-            <Link to=""><img src="/carrinho-icon.png" alt="" /></Link >
+            <Link to=""><img src="/carrinho-icon.png"alt="" /></Link >
           </li>
-          <li>
-            <Link to="/login"><img src="/login-icon.png" alt="" /></Link >
-          </li>
+          {user ? 
+            <Link to='/perfil' className={styles.displayName} >{user.displayName}</Link>
+           : 
+            <li>
+            <Link to="/login"><img src="/login-icon.png"alt="" /></Link >
+            </li> }
         </ul>
       </nav>
   )

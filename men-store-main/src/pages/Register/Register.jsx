@@ -2,6 +2,7 @@ import styles from "./Register.module.css"
 
 import { useEffect, useState } from "react"
 import { useAuthenticated } from "../../hooks/useAuthenticated"
+import { useNavigate } from 'react-router-dom'
 
 const Register = () => {
   
@@ -14,8 +15,12 @@ const Register = () => {
 
   const {auth, createUser, error: authError, loading} = useAuthenticated()
 
+  const navigate = useNavigate()
+
   const handleSubmit = async (evt) => {
     evt.preventDefault()
+
+    setError(null)
 
     const user = {
       username,
@@ -30,7 +35,9 @@ const Register = () => {
     }
 
     const res = await createUser(user)
-    console.log(res)
+    if (res) {
+      navigate('/login')
+    }
 
     setUsername("")
     setEmail("")

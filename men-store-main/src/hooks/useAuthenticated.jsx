@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react"
-import { createUserWithEmailAndPassword , updateProfile } from "firebase/auth"
+import { createUserWithEmailAndPassword , updateProfile, onAuthStateChanged, signOut, signInWithEmailAndPassword } from "firebase/auth"
 import { auth } from "../firebase/config"
 
 export const useAuthenticated = () => {
@@ -14,6 +14,7 @@ export const useAuthenticated = () => {
         }
     }
 
+    /* Registro */
     const createUser = async (data) => {
         checkIsCancel()
 
@@ -52,14 +53,56 @@ export const useAuthenticated = () => {
 
             setError(systemErrorMessage)
 
+            return null
         }
 
+    }
+
+    /* Login */
+    const [user, setUser] = useState(null)
+    const [authLoading, setAuthLoading] = useState(true)
+    const [loginError, setLoginError] = useState(null)
+
+    const login = async (email, password) => {
+
+        try {
+            console.log("Tentando Logar com:", email, password)
+            await signInWithEmailAndPassword(auth, email, password)
+
+        } catch (err) {
+            
+            setLoginError("Email ou Senha inválidos")
+
+        }
+
+    }
+
+    useEffect(() => {
+        const unsubscribe = onAuthStateChanged(auth, (user) => {
+            setUser(user)
+            setAuthLoading(false)
+        })
+
+        return () => unsubscribe()
+
+    }, [])
+
+    // Logout 
+    const logout = () => {
+
+        signOut(auth)
+        
     }
 
     return {
         auth,
         createUser,
         error,
-        loading
+        loading,
+        user,
+        login,
+        loginError,
+        authLoading,
+        logout
     }
 }
