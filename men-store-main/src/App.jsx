@@ -49,7 +49,7 @@ function App() {
           <NavBar />
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/products/:id' element={<Products />} />
+            <Route path='/products/:productType' element={<Products />} />
             <Route path='/productdetails/:id' element={<ProductsDetails />} />
             <Route path='/register' element={<Register />} />
             <Route path='/login' element={<Login />} />

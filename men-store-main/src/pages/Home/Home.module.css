@@ -1,0 +1,48 @@
+.backgroundImg {
+    width: 100%;
+    height: 100vh;
+}
+
+.products > h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5em;
+    margin: 1em;
+}
+
+.products {
+  padding: 2rem;
+}
+
+.cardsNav {
+  width: 100%;
+}
+
+.card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card:hover { 
+  cursor: pointer;
+  transform: translate(-3px, -3px);
+}
+
+.img {
+  max-width: 100%;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.value {
+  color: #555;
+  margin-top: 0.5rem;
+}

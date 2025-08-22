@@ -1,0 +1,32 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    padding: 2em;
+}
+
+.card { 
+    padding: 10px;
+    margin: 2em;
+}
+
+.img {
+    width: 350px;
+    height: 400px;
+}
+
+.buttonAdd {
+    background-color: #0D1A26;
+    color: white;
+    cursor: pointer;
+    width: 350px;
+    padding: 10px;
+    font-size: 1.4em;
+    border-radius: 10px;
+    border: none;
+}
+
+.buttonAdd:hover {
+    transform: translate(1px, -1px);
+}

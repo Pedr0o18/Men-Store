@@ -1,0 +1,144 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "nome": "Polo Branca",
+            "valor": 100.00,
+            "url": "/imagens/polo-branca.png",
+            "tipo": "camisa"
+        },
+        {
+            "id": 2,
+            "nome": "Polo Vinho",
+            "valor": 110.00,
+            "url": "/imagens/polo-vinho.png",
+            "tipo": "camisa"
+        },
+        {
+            "id": 3,
+            "nome": "Polo Azul",
+            "valor": 95.00,
+            "url": "/imagens/polo-azul.png",
+            "tipo": "camisa"
+        },
+        {
+            "id": 4,
+            "nome": "Polo Preta",
+            "valor": 105.00,
+            "url": "/imagens/polo-preta.png",
+            "tipo": "camisa"
+        },
+        {
+            "id": 5,
+            "nome": "Polo Preta",
+            "valor": 125.00,
+            "url": "/imagens/polo-preta-2.png",
+            "tipo": "camisa"
+        },
+        {
+            "id": 6,
+            "nome": "T-shirt Preta",
+            "valor": 80.00,
+            "url": "/imagens/t-shirt-preta.png",
+            "tipo": "tshirts"
+        },
+        {
+            "id": 7,
+            "nome": "T-shirt Bege",
+            "valor": 95.00,
+            "url": "/imagens/t-shirt-bege.png",
+            "tipo": "tshirts"
+        },
+        {
+            "id": 8,
+            "nome": "T-shirt Branca",
+            "valor": 85.00,
+            "url": "/imagens/t-shirt-branca.png",
+            "tipo": "tshirts"
+        },
+        {
+            "id": 9,
+            "nome": "T-shirt Preta",
+            "valor": 100.00,
+            "url": "/imagens/t-shirt-preta-2.png",
+            "tipo": "tshirts"
+        },
+        {
+            "id": 10,
+            "nome": "T-shirt Estampada",
+            "valor": 90.00,
+            "url": "/imagens/t-shirt-preta-estampada.png",
+            "tipo": "tshirts"
+        },
+        {
+            "id": 11,
+            "nome": "Calça Jeans",
+            "valor": 150.00,
+            "url": "/imagens/calca-jeans.png",
+            "tipo": "calcas"
+        },
+        {
+            "id": 12,
+            "nome": "Calça Skiny",
+            "valor": 160.00,
+            "url": "/imagens/calca-skiny.png",
+            "tipo": "calcas"
+        },
+        {
+            "id": 13,
+            "nome": "Calça Social",
+            "valor": 200.00,
+            "url": "/imagens/calca-social.png",
+            "tipo": "calcas"
+        },
+        {
+            "id": 14,
+            "nome": "Calça Baggy",
+            "valor": 140.00,
+            "url": "/imagens/cargo-baggy.png",
+            "tipo": "calcas"
+        },
+        {
+            "id": 15,
+            "nome": "Calça Cargo",
+            "valor": 195.00,
+            "url": "/imagens/cargo-preta.png",
+            "tipo": "calcas"
+        },
+        {
+            "id": 16,
+            "nome": "Short Praia",
+            "valor": 50.00,
+            "url": "/imagens/short-praia.png",
+            "tipo": "shorts"
+        },
+        {
+            "id": 17,
+            "nome": "Short Tactel",
+            "valor": 50.00,
+            "url": "/imagens/tactel.png",
+            "tipo": "shorts"
+        },
+        {
+            "id": 18,
+            "nome": "Short Branco",
+            "valor": 50.00,
+            "url": "/imagens/linho-branco.png",
+            "tipo": "shorts"
+        },
+        {
+            "id": 19,
+            "nome": "Short Preto",
+            "valor": 50.00,
+            "url": "/imagens/linho-preto.png",
+            "tipo": "shorts"
+        },
+        {
+            "id": 20,
+            "nome": "Short Linho",
+            "valor": 50.00,
+            "url": "/imagens/short-linho.png",
+            "tipo": "shorts"
+        }
+    ]
+}
