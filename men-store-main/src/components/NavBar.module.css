@@ -34,3 +34,10 @@ a {
     margin: 0px 5px;
     font-size: 1.2em;
 }
+
+.buttonCart {
+    background: none;   
+    border: none;    
+    outline: none;
+    cursor: pointer;      
+}

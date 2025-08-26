@@ -8,9 +8,11 @@ import { useAuthenticated } from './hooks/useAuthenticated'
 
 /* Importação de Componentes */
 import NavBar from './components/NavBar'
+import MarketCart from './components/MarketCart'
 
 /* Importação do Context */
 import { AuthProvider } from './context/AuthContext'
+import { CartProvider } from './context/CartContext'
 
 /* Importação das Páginas */
 import './App.css'
@@ -45,8 +47,10 @@ function App() {
   return (
     <div className="App">
       <AuthProvider value={{user}}>
+      <CartProvider>
         <BrowserRouter>
           <NavBar />
+          <MarketCart  />
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/products/:productType' element={<Products />} />
@@ -56,6 +60,7 @@ function App() {
             <Route path='/perfil' element={<PrivateRoute><Perfil /></PrivateRoute>} />
           </Routes>
         </BrowserRouter>
+      </CartProvider>
       </AuthProvider>
     </div>
   )

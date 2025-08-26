@@ -1,14 +1,14 @@
 import styles from './NavBar.module.css'
 
-import { useAuthenticated } from '../hooks/useAuthenticated'
-
 import { useAuthValue } from '../context/AuthContext'
+import { useCart } from '../context/CartContext'
 
 import {Link} from 'react-router-dom'
 
 const NavBar = () => {
 
   const {user} = useAuthValue()
+  const {setIsOpen} = useCart()
 
   return (
       <nav className={styles.navBarDisplay}>
@@ -32,7 +32,7 @@ const NavBar = () => {
             <Link to=""><img src="/search-icon.png" alt="" /></Link >
           </li>
           <li>
-            <Link to=""><img src="/carrinho-icon.png"alt="" /></Link >
+            <button className={styles.buttonCart} onClick={() => setIsOpen(true)} ><img src="/carrinho-icon.png"alt="" /></button>
           </li>
           {user ? 
             <Link to='/perfil' className={styles.displayName} >{user.displayName}</Link>
